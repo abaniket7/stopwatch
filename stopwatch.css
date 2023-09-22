@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+*{
+
+    margin: 0;
+    padding: 0;
+    block-size: border-box;
+    font-family: "Poppins", sans-seri;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    background: url('pocket-watch-3156771_1920.jpg') no-repeat center center/cover;
+}
+
+.wrapper{
+    user-select: none;
+}
+
+.wrapper .time{
+    height: 100px;
+    background: rgb(186, 193, 233);
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 10px 1opx 20px rgba(0, 0, 0, 0.09);
+    padding: 0 10px;
+}
+
+.wrapper .time span{
+    width: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #8b4bde;
+}
+
+.time span .colon {
+    width: 10px;
+}
+
+.time span.ms-colon,
+.time span.millisecond {
+  color: rgb(66, 65, 69);
+}
+
+.wrapper .buttons{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.buttons button{
+    padding: 8px 33px;
+    outline: none;
+    border: none;
+    margin: 0 5px;
+    color: rgb(7, 7, 7);
+    background: wheat;
+    font-size: 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    box-shadow: 10px 10px 20px;
+}
+
+.buttons button.active, .buttons button.stopActive{
+    pointer-events: none;
+    opacity: 0.8;
+}
